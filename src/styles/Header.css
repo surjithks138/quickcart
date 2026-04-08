@@ -8,7 +8,16 @@
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
+  text-align: left;
 }
 
 .header-title {
@@ -23,6 +32,38 @@
   font-weight: 300;
 }
 
+.cart-icon-btn {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.cart-icon-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff4757;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .header-title {
     font-size: 2rem;
@@ -30,5 +71,9 @@
   
   .header-subtitle {
     font-size: 1rem;
+  }
+  
+  .cart-icon-btn {
+    font-size: 1.5rem;
   }
 }
